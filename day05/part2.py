@@ -11,7 +11,6 @@ def main():
 
 
 def calculate(input_text):
-
     given = input_text.split("\n\n")
     seedinfo = [int(i) for i in given[0].split(" ")[1:]]
     it = iter(seedinfo)

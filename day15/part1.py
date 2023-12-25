@@ -11,7 +11,6 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 0
     for s in input_text.split(","):
         answer += hash_(s) % 256

@@ -12,7 +12,6 @@ def main():
 
 
 def calculate(input_text):
-
     MAX_RED = 12
     MAX_GREEN = 13
     MAX_BLUE = 14

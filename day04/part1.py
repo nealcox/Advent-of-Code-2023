@@ -12,11 +12,10 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 0
     for line in input_text.split("\n"):
         first, second = line.split("|")
-        
+
         winning_nums = set([int(i) for i in re.findall(r"(-?\d+)", first)][1:])
         my_nums = set([int(i) for i in re.findall(r"(-?\d+)", second)])
         in_common = len(winning_nums & my_nums)

@@ -12,7 +12,6 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 0
     for line in input_text.split("\n"):
         digits = re.findall(r"(\d)", line)

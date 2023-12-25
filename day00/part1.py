@@ -14,7 +14,6 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 0
     given = parse(input_text)
     print(given)

@@ -12,7 +12,6 @@ def main():
 
 
 def calculate(input_text):
-
     subs = [
         ("one", "o1e"),
         ("two", "t2o"),

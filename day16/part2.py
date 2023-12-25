@@ -14,7 +14,6 @@ def main():
 
 
 def calculate(input_text):
-
     nums_energised = set()
     given = input_text.splitlines()
     height = len(given)
@@ -34,7 +33,6 @@ def calculate(input_text):
 
 
 def get_num_energised(beam, given, height, width):
-
     slash = {"r": "u", "l": "d", "u": "r", "d": "l"}  # /
     backslash = {"r": "d", "l": "u", "u": "l", "d": "r"}  # \
     seen = set()

@@ -12,7 +12,6 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 0
     given = get_re(input_text)
     for game_id, shown in given:
@@ -20,7 +19,7 @@ def calculate(input_text):
         min_green = 0
         min_blue = 0
         print(game_id, shown)
-        for (r, g, b) in shown:
+        for r, g, b in shown:
             min_red = max(min_red, r)
             min_green = max(min_green, g)
             min_blue = max(min_blue, b)

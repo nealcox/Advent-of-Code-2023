@@ -11,7 +11,6 @@ def main():
 
 
 def calculate(input_text):
-
     area = set()
     r, c = 0, 0
     left, right, top, bottom = float("inf"), -float("inf"), float("inf"), -float("inf")
@@ -44,7 +43,7 @@ def calculate(input_text):
     to_check.append((top, left))
     while to_check:
         next_to_check = []
-        for (r, c) in to_check:
+        for r, c in to_check:
             block = set()
             for dr in range(-1, 2):
                 for dc in range(-1, 2):

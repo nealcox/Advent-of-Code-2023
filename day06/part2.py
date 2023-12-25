@@ -12,7 +12,6 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 1
     lines = input_text.splitlines()
     times = [int(i) for i in re.findall(r"(-?\d+)", lines[0])]

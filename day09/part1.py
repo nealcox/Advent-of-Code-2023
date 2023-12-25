@@ -12,7 +12,6 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 0
     max_order = -1
     for line in input_text.splitlines():
@@ -22,14 +21,13 @@ def calculate(input_text):
         while True:
             diffs = []
             for i, num1 in enumerate(nums[:-1]):
-                num2= nums[i+1]
+                num2 = nums[i + 1]
                 diffs.append(num2 - num1)
             to_add += diffs[-1]
             if len(Counter(diffs)) == 1:
                 break
             nums = diffs
         answer += to_add
-
 
     return answer
 

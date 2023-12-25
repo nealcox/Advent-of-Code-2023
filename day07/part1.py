@@ -20,8 +20,8 @@ FULL_HOUSE = 4
 FOUR_OF_A_KIND = 5
 FIVE_OF_A_KIND = 6
 
-def calculate(input_text):
 
+def calculate(input_text):
     answer = 0
     hands = []
     for line in input_text.splitlines():

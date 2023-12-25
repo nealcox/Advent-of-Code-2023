@@ -1,7 +1,4 @@
-import re
 import sys
-from collections import defaultdict
-from itertools import permutations
 
 
 def main():
@@ -14,7 +11,6 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 0
     for pattern in input_text.split("\n\n"):
         lines = pattern.splitlines()
@@ -22,13 +18,9 @@ def calculate(input_text):
 
     return answer
 
-def get_reflex(pattern):
 
+def get_reflex(pattern):
     # Horizontal reflection
-    print("Pattern:")
-    for line in pattern:
-        print(line)
-    print()
 
     for i in range(len(pattern) - 1):
         if pattern[i] == pattern[i + 1]:  # Possible reflection
@@ -39,11 +31,6 @@ def get_reflex(pattern):
                     # not a reflection
                     reflection = False
             if reflection:
-                for x,line in enumerate(pattern):
-                    print(line, end = "")
-                    if x == i or x == i + 1:
-                        print(" <", end = "")
-                    print()
                 return 100 * (i + 1)
     # Vertical reflection
     transposed = []
@@ -52,12 +39,6 @@ def get_reflex(pattern):
 
     return int(get_reflex(transposed) / 100)
 
-
-
-
-
-
-    
 
 example = """\
 #.##..##.

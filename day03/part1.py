@@ -12,7 +12,6 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 0
     lines = parse(input_text)
     height = len(lines)

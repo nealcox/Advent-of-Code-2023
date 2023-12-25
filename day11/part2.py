@@ -11,7 +11,6 @@ def main():
 
 
 def calculate(input_text):
-
     galaxies = []
     rows = input_text.splitlines()
     blank_rows = set()

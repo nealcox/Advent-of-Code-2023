@@ -13,7 +13,6 @@ def main():
 
 
 def calculate(input_text):
-
     directions_s, mappings_s = input_text.split("\n\n")
     directions = cycle(directions_s)
     mappings = {}

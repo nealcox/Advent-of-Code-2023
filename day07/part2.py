@@ -22,7 +22,6 @@ FIVE_OF_A_KIND = 6
 
 
 def calculate(input_text):
-
     answer = 0
     hands = []
     for line in input_text.splitlines():
@@ -51,9 +50,9 @@ def calculate(input_text):
                     by_type[THREE_OF_A_KIND].append((hand, bid))  # Three of a kind
                 else:
                     by_type[ONE_PAIR].append((hand, bid))  # One Pair
-            else: # Two pairs
+            else:  # Two pairs
                 if num_jokers == 1:
-                    by_type[ FULL_HOUSE].append((hand, bid))  # Full house
+                    by_type[FULL_HOUSE].append((hand, bid))  # Full house
                 elif num_jokers == 2:
                     by_type[FOUR_OF_A_KIND].append((hand, bid))  # Four of a kind
                 else:

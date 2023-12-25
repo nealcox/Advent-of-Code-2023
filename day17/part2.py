@@ -12,7 +12,6 @@ def main():
 
 
 def calculate(input_text):
-
     answer = float("inf")
     directions = {"h": (("<", 0, -1), (">", 0, 1)), "v": (("^", -1, 0), ("v", 1, 0))}
     minima = defaultdict(lambda: float("inf"))

@@ -13,7 +13,6 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 0
     seen = set()
     area, height, width = get_map(input_text)
@@ -32,7 +31,7 @@ def calculate(input_text):
     while True:
         answer += 1
         next_points = set()
-        for (r, c) in points:
+        for r, c in points:
             char = area[r, c]
             up = (r - 1, c)
             down = (r + 1, c)

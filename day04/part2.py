@@ -13,13 +13,11 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 0
     cards = defaultdict(int)
     for line in input_text.split("\n"):
         first, second = line.split("|")
-        
-        
+
         first_nums = [int(i) for i in re.findall(r"(-?\d+)", first)]
         card_id = first_nums[0]
         cards[card_id] += 1
@@ -27,7 +25,7 @@ def calculate(input_text):
         winning_nums = set(first_nums[1:])
         my_nums = set([int(i) for i in re.findall(r"(-?\d+)", second)])
         in_common = len(winning_nums & my_nums)
-        for i in range(card_id+1, card_id + in_common +1):
+        for i in range(card_id + 1, card_id + in_common + 1):
             cards[i] += cards[card_id]
 
     return sum(cards.values())

@@ -14,7 +14,6 @@ def main():
 
 
 def calculate(input_text):
-
     slash = {"r": "u", "l": "d", "u": "r", "d": "l"}  # /
     backslash = {"r": "d", "l": "u", "u": "l", "d": "r"}  # \
     given = input_text.splitlines()

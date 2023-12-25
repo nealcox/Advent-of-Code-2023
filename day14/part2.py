@@ -11,7 +11,6 @@ def main():
 
 
 def calculate(input_text):
-
     cycles_to_do = 1000000000
     answer = 0
     seen = {}

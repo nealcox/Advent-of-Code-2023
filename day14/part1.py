@@ -11,7 +11,6 @@ def main():
 
 
 def calculate(input_text):
-
     answer = 0
     given = input_text.splitlines()
     num_rows = len(given)
